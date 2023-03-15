@@ -1,4 +1,4 @@
-## An algorithm for determining the twin-width of a graph
+## An algorithm for determining the ~~twin-width~~ queue number of a graph
 
 To install missing dependencies:
 

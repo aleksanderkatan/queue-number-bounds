@@ -1,15 +1,4 @@
 import networkx as nx
-from algorithms.other.trigraph import Trigraph
-
-
-def calculate_twinwidth_of_sequence(graph: nx.Graph, sequence):
-    trigraph = Trigraph(graph)
-    max_red = 0
-    for u, v in sequence:
-        trigraph.merge(u, v)
-        max_red = max(max_red, trigraph.max_red_degree())
-
-    return max_red
 
 
 def read_graph(path):
@@ -37,3 +26,10 @@ def _preprocess_file(path):
     with open(path, 'r') as f:
         c = [line for line in f.read().split("\n") if not line.startswith("c")]
         return c
+
+
+
+def check_qn(graph: nx.Graph, sequence):
+    pass
+
+
